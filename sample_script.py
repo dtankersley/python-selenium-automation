@@ -23,7 +23,7 @@ search.send_keys('taxi')
 # wait for 4 sec
 sleep(4)
 
-# click search button
+# click search buttont
 driver.find_element(By.NAME, 'btnK').click()
 
 # verify search results
