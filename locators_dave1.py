@@ -23,7 +23,11 @@ driver.find_element(By.ID, 'glow-ingress-line2')
 
 #Search by XPath
 driver.find_element(By.XPATH, "//input@aria-label='Search Amazon']")
+<<<<<<< HEAD
 driver.find_element(By.XPATH, "//input[@name='field-keywords']")
+=======
+driver.find_element(By.XPATH, "//input{@name='field-keywords']")
+>>>>>>> 51f40b6fca168006622e2cf526f64fe824cfcecb
 
 # by XPath with multiple attributes
 driver.find_element(By.XPATH, "//input(@class='nav-input nav-progressive-attribute' and @value='Go']")
