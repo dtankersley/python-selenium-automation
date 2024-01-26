@@ -19,7 +19,7 @@ driver.get('https://www.target.com/')
 sleep(8)
 
 #Click the sign-in button
-driver.find_element(By.XPATH, '//span[@class="styles__ListItemText-sc-diphzn-1.jaMNVl"]').click()
+driver.find_element(By.XPATH, "//div[contains(@class, 'styles__LinkContainer')]/a[contains(@href, '/sign-in')]")
 
 #Click the Sign-in link from the side panel
 driver.find_element(By.XPATH, '//span["class="styles__ListItemText-sc-diphzn-1.jaMNVl"]').click()
