@@ -19,32 +19,13 @@ driver.get('https://www.target.com/')
 sleep(8)
 
 #Click the sign-in button
-driver.find_element(By.XPATH, "//div[contains(@class, 'styles__LinkContainer')]/a[contains(@href, '/sign-in')]")
+#driver.find_element(By.XPATH, "//div[contains(@class, 'styles__LinkContainer')]/a[contains(@href, '/sign-in')]")
+driver.find_element(By.XPATH, "//span[text()='Sign in']").click() # Click SignIn button
+sleep(3)
 
 #Click the Sign-in link from the side panel
-driver.find_element(By.XPATH, '//span["class="styles__ListItemText-sc-diphzn-1.jaMNVl"]').click()
-
-#[span.styles__ListItemText-sc-diphzn-1.jaMNVl]
-#@id="listaccountNav-signIn"]/a/span
-#Verify that the Sign-in page opened
-
-   #check that the "sign-in to your Target account" is shown
-
-
-   #Sign-in button is shown?
-
-
-
-# populate search:
-#driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Tux Penguin')
-# click on search icon:
-#driver.find_element(By.ID, 'nav-search-submit-button').click()
-
-# Verification:
-#expected_result = '"Tux Penguin"'
-#actual_result = driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text
-
-#assert expected_result == actual_result, f'Error. Expected text {expected_result} did not match actual {actual_result}'
-#print('Test case passed!')
+#driver.find_element(By.XPATH, '//span["class="styles__ListItemText-sc-diphzn-1.jaMNVl"]').click()
+driver.find_element(By.XPATH, "//a[@data-test='accountNav-signIn']//span[text()='Sign in']").click() #  Click SignIn button
+sleep(3)
 
 driver.quit()
