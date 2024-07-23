@@ -1,5 +1,3 @@
-
-
 #Find the Amazon Logo
 driver.findelement(By.XPATH, '//i[@aria-label="Amazon"}')
 
@@ -13,7 +11,7 @@ driver.find_element(By.ID, 'continue')
 driver.findelement(By.XPATH, '//input[@type="submit"]')
 
 #Conditions of use link
-driver.findelement(By.ID,"legalTextRow"])
+driver.findelement(By.ID,"legalTextRow")
 driver.findelement(By.XPATH, '//div[@class="a-row a-spacing-top-medium a-size-small"]')
 
 #Privacy Notice Link"
@@ -31,4 +29,3 @@ driver.find_element(By.ID, "ap-other-signin-issues-link")
 
 #Create your Amazon Account
 driver.find_element(By.ID, "createAccountSubmit")
-

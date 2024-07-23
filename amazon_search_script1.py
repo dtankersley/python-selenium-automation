@@ -15,7 +15,7 @@ driver.maximize_window()
 # open the url
 driver.get('https://www.amazon.com/')
 # populate search:
-driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Tux Penguin')
+driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('TuxPenguin')
 # click on search icon:
 driver.find_element(By.ID, 'nav-search-submit-button').click()
 
