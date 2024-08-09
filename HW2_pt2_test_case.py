@@ -19,7 +19,9 @@ driver.get('https://www.amazon.com/')
 # populate search:
 driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Tux Penguin')
 # click on search icon:
-driver.find_element(By.ID, from selenium import webdriver
+driver.find_element(By.ID,
+
+
 #from selenium.webdriver.common.by import By
 #from selenium.webdriver.chrome.service import Service
 #from webdriver_manager.chrome import ChromeDriverManager
